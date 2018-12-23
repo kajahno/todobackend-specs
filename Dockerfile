@@ -21,4 +21,4 @@ RUN npm install -g mocha && \
     npm install 
 
 # Set mocha as test running entrypoing
-ENTRYPOINT mocha
+ENTRYPOINT mocha --reporter mocha-jenkins-reporter -- tests/*.js
